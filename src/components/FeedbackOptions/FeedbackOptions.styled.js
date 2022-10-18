@@ -27,5 +27,6 @@ export const Button = styled.button`
 
 export const ButtonsList = styled.ul`
   display: flex;
+  justify-content: center;
   gap: 10px;
 `;
