@@ -1,5 +1,7 @@
 import { Component } from 'react';
 
+import { Container } from './Container';
+
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Notification } from './Notification/Notification';
 import { Section } from './Section/Section';
@@ -28,7 +30,7 @@ export class App extends Component {
   };
   render() {
     return (
-      <>
+      <Container>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
@@ -48,7 +50,7 @@ export class App extends Component {
             <Notification message="There is no feedback" />
           )}
         </Section>
-      </>
+      </Container>
     );
   }
 }
